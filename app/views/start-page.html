@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+            <h1>
+                Find where to get rapid lateral flow tests
+            </h1>
+
+
+          <!--<p>Rapid lateral flow tests are tests to check if you have coronavirus (COVID-19) if you do not have symptoms.</p>-->
+       
+          <div class="nhsuk-inset-text">
+              <span class="nhsuk-u-visually-hidden">Information: </span>
+              <p>If you do have coronavirus symptoms, you need a PCR test. <a href="#">Get a PCR test if you have coronavirus symptoms on GOV.UK</a>.</p>
+            
+            <p>This finder is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
+
+            </div>
+
+
+        <label class="nhsuk-label" for="address-town">
+            Enter a town, city or postcode in [England/UK]
+        </label>
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-half">
+                <input class="nhsuk-input input-width-30" id="address-town" name="address-town" type="text"> 
+
+                                <a href="/templates/question-page" class="nhsuk-button nhsuk-u-margin-top-4">
+                  Search
+                </a>
+            </div>
+  
+          </div>
+
+
+            <hr />
+         
+
+          <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                <h1 class="nhsuk-fieldset__heading">
+                Rapid test collection sites near {entered place name}
+            </h1>
+          </legend>
+
+
+
+            <p><a href="#">Map view</a></p>
+          </fieldset>
+
+
+
+<p>[RESULTS HERE]</p>
+
+
+    </div>
+
+
+    
+
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+{% endblock %}
