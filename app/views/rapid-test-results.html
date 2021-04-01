@@ -1,0 +1,397 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block outerContent %}
+  {{ backLink({
+    "href": "/rapid-test",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+
+          <!--<p>Rapid lateral flow tests are tests to check if you have coronavirus (COVID-19) if you do not have symptoms.</p>-->
+
+                  <h1 class="nhsuk-u-margin-bottom-4">
+                        Test sites
+                  </h1>
+    
+                  <details class="nhsuk-details nhsuk-expander ">
+                        <summary class="nhsuk-details__summary">
+                          <span class="nhsuk-details__summary-text">
+                            Filter results, including by accessibility and access needs
+                          </span>
+                        </summary>
+                        <div class="nhsuk-details__text">
+                                <div class="nhsuk-form-group">
+
+                                        <div class="nhsuk-hint" id="contact-hint">
+                                                Select all options that are relevant to you.
+                                              </div>
+
+                                        <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                            <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                    Test site for people without symptoms
+                                            </h1>
+                                          </legend>
+                                    
+                                          <div class="nhsuk-checkboxes">
+                                      
+                                            <div class="nhsuk-checkboxes__item">
+                                              <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                    Test site requiring booking
+                                              </label>
+                                            </div>
+                                      
+                                            <div class="nhsuk-checkboxes__item">
+                                              <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                              <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                    Test site not requiring booking
+                                              </label>
+                                            </div>
+                                      
+                                          </div>
+                                        </fieldset>
+
+
+                                        <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                                  <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                        Test site for people with symptoms
+                                                  </h1>
+                                                </legend>
+                                          
+                                                <div class="nhsuk-checkboxes">
+                                            
+                                                  <div class="nhsuk-checkboxes__item">
+                                                    <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                            Test site requiring booking
+                                                    </label>
+                                                  </div>
+                                            
+                                                  <div class="nhsuk-checkboxes__item">
+                                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                          Test site not requiring booking
+                                                    </label>
+                                                  </div>
+                                            
+                                                </div>
+                                              </fieldset>
+
+
+                                              <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                                      <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                            Vaccination centre
+                                                      </h1>
+                                                    </legend>
+                                              
+                                                    <div class="nhsuk-checkboxes">
+                                                
+                                                      <div class="nhsuk-checkboxes__item">
+                                                        <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                                Vaccination centre requiring booking
+                                                        </label>
+                                                      </div>
+                                                
+                                                      <div class="nhsuk-checkboxes__item">
+                                                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                Vaccination centre not requiring booking
+                                                        </label>
+                                                      </div>
+                                                
+                                                    </div>
+                                                  </fieldset>
+
+
+                                                      <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                                              <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                                    Test pick up and drop off
+                                                              </h1>
+                                                            </legend>
+                                                      
+                                                            <div class="nhsuk-checkboxes">
+                                                        
+                                                              <div class="nhsuk-checkboxes__item">
+                                                                <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                                        Pick up sites for test kits
+                                                                </label>
+                                                              </div>
+                                                        
+                                                              <div class="nhsuk-checkboxes__item">
+                                                                <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                        Drop off sites for test kits
+                                                                </label>
+                                                              </div>
+                                                        
+                                                            </div>
+                                                          </fieldset>
+
+                                                          <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                                                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                                                  <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                                        Site facilities
+                                                                  </h1>
+                                                                </legend>
+                                                          
+                                                                <div class="nhsuk-checkboxes">
+                                                            
+                                                                  <div class="nhsuk-checkboxes__item">
+                                                                    <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                                            Wheelchair access
+                                                                    </label>
+                                                                  </div>
+                                                            
+                                                                  <div class="nhsuk-checkboxes__item">
+                                                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                            Assisted testing
+                                                                    </label>
+                                                                  </div>
+
+                                                                  <div class="nhsuk-checkboxes__item">
+                                                                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                Hearing loops
+                                                                        </label>
+                                                                      </div>
+
+                                                                      <div class="nhsuk-checkboxes__item">
+                                                                            <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                    Toilets available
+                                                                            </label>
+                                                                          </div>
+
+                                                                          <div class="nhsuk-checkboxes__item">
+                                                                                <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                        On foot testing
+                                                                                </label>
+                                                                              </div>
+
+                                                                              <div class="nhsuk-checkboxes__item">
+                                                                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                            Drive through
+                                                                                    </label>
+                                                                                  </div>
+
+                                                                                  <div class="nhsuk-checkboxes__item">
+                                                                                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                Paid parking
+                                                                                        </label>
+                                                                                      </div>
+
+                                                                                      
+                                                                                      <div class="nhsuk-checkboxes__item">
+                                                                                            <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                    Free parking
+                                                                                            </label>
+                                                                                          </div>
+
+                                                                                      
+                                                                                          <div class="nhsuk-checkboxes__item">
+                                                                                                <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                        Language translation
+                                                                                                </label>
+                                                                                              </div>
+
+                                                                                              <div class="nhsuk-checkboxes__item">
+                                                                                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                            BSL Support
+                                                                                                    </label>
+                                                                                                  </div>
+
+                                                                                                  <div class="nhsuk-checkboxes__item">
+                                                                                                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                                Braille
+                                                                                                        </label>
+                                                                                                      </div>
+
+                                                                                                      <div class="nhsuk-checkboxes__item">
+                                                                                                            <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                                    Easy read instructions
+                                                                                                            </label>
+                                                                                                          </div>
+
+                                                                                                          <div class="nhsuk-checkboxes__item">
+                                                                                                                <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                                        Video assistance
+                                                                                                                </label>
+                                                                                                              </div>
+
+                                                                                                              <div class="nhsuk-checkboxes__item">
+                                                                                                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                                                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                                                            First Aid
+                                                                                                                    </label>
+                                                                                                                  </div>
+                                                                </div>
+                                                              </fieldset>
+
+
+                                                              <fieldset class="nhsuk-fieldset nhsuk-u-margin-bottom-6" aria-describedby="contact-hint">
+                                                                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
+                                                                      <h1 class="nhsuk-fieldset__heading nhsuk-heading-s">
+                                                                            Site busy levels
+                                                                      </h1>
+                                                                    </legend>
+                                                              
+                                                                    <div class="nhsuk-checkboxes">
+                                                                
+                                                                      <div class="nhsuk-checkboxes__item">
+                                                                        <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                                                15 to 45 min wait
+                                                                        </label>
+                                                                      </div>
+                                                                
+                                                                      <div class="nhsuk-checkboxes__item">
+                                                                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone">
+                                                                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                                                                Less than 15 min wait
+                                                                        </label>
+                                                                      </div>
+                                                                
+                                                                    </div>
+                                                                  </fieldset>
+                                      
+                                      </div>
+                        </div>
+                      </details>
+
+              
+    
+           
+            <p>No filters selected</p>
+        
+                      
+            <p><a href="#">Map view</a></p>
+
+            <hr >
+            
+            <div>
+                   
+                    <h2 class="results__name nhsuk-u-padding-top-1"><a href="/center-overlay">Holywell Lane Community Test Site and LFT Collection Point</a></h2>
+                    
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4"><strong>Test site for people with no symptoms - a booking is required </strong></p>
+                    
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                        Holywell Lane Day Center, WF10 3HH
+                    </p>
+
+
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                            <strong>Normal opening times today</strong><br>
+                            08:45am - 07:00pm 
+                        </p>
+    
+                        <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                <strong>Status </strong><br>
+                                Closed 
+                            </p>
+        
+                            <a href="#" class="nhsuk-button nhsuk-u-margin-top-4">
+                                Book a test
+                              </a>
+                </div>
+
+
+            <hr >
+            
+            <div>
+                   
+                    <h2 class="results__name nhsuk-u-padding-top-1"><a href="/center-overlay">Bradford Centenary Test Site</a></h2>
+                    
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4"><strong>Pick up site - for at home test kits No booking required</strong></p>
+                    
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                        	Centenary Square, BD1 1HY 
+                    </p>
+
+
+                    <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                            <strong>Normal opening times today</strong><br>
+                            03:00pm - 08:00pm 
+                        </p>
+    
+                        <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                <strong>Status </strong><br>
+                                Closed 
+                            </p>
+        
+                </div>
+
+
+                <hr >
+            
+                <div>
+                       
+                        <h2 class="results__name nhsuk-u-padding-top-1"><a href="/center-overlay">Waterfront Car Park</a></h2>
+                        
+                        <p class="nhsuk-list nhsuk-u-margin-bottom-4"><strong>Pick up site - for at home test kits No booking required</strong></p>
+                        
+                        <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                                Waterfront Car Park, WF15J
+                        </p>
+    
+    
+                        <p class="nhsuk-list nhsuk-u-margin-bottom-4">
+                                <strong>Normal opening times today</strong><br>
+                                03:00pm - 08:00pm 
+                            </p>
+        
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                    <strong>Status </strong><br>
+                                    Closed 
+                                </p>
+            
+                    </div>
+
+
+
+         
+    </div>
+
+
+    
+
+  </div>
+
+
+
+
+
+  
+
+
+
+
+
+{% endblock %}

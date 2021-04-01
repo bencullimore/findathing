@@ -4,16 +4,21 @@
   Start page template - NHS.UK prototype kit
 {% endblock %}
 
-
+{% block outerContent %}
+  {{ backLink({
+    "href": "/rapid-test-results",
+    "text": "Go back",
+    "classes": "nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-0"
+  }) }}
+{% endblock %}
 
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
-<p><a href="#"><&nbsp;Back to results</a></p>
 
             <h1>
-                    Furnville Leisure Centre Car Park
+                Holywell Lane Community Test Site and LFT Collection Point
             </h1>
 <h2>Site details</h2>
 <h3 class="nhsuk-u-margin-bottom-1">Address</h3>
